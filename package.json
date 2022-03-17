@@ -1,5 +1,6 @@
 {
   "name": "web3-react-example",
+  "homepage": "https://jacobhsu.github.io/web3-react-v6",
   "scripts": {
     "start": "next",
     "build": "next build && next export"
