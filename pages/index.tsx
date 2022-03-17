@@ -16,12 +16,12 @@ import {
   walletconnect,
   walletlink,
   ledger,
-  trezor,
+  // trezor,
   lattice,
-  frame,
+  // frame,
   authereum,
   fortmatic,
-  magic,
+  // magic,
   portis,
   torus
 } from '../connectors'
@@ -33,12 +33,12 @@ enum ConnectorNames {
   WalletConnect = 'WalletConnect',
   WalletLink = 'WalletLink',
   Ledger = 'Ledger',
-  Trezor = 'Trezor',
+  // Trezor = 'Trezor',
   Lattice = 'Lattice',
-  Frame = 'Frame',
+  // Frame = 'Frame',
   Authereum = 'Authereum',
   Fortmatic = 'Fortmatic',
-  Magic = 'Magic',
+  // Magic = 'Magic',
   Portis = 'Portis',
   Torus = 'Torus'
 }
@@ -49,12 +49,12 @@ const connectorsByName: { [connectorName in ConnectorNames]: any } = {
   [ConnectorNames.WalletConnect]: walletconnect,
   [ConnectorNames.WalletLink]: walletlink,
   [ConnectorNames.Ledger]: ledger,
-  [ConnectorNames.Trezor]: trezor,
+  // [ConnectorNames.Trezor]: trezor,
   [ConnectorNames.Lattice]: lattice,
-  [ConnectorNames.Frame]: frame,
+  // [ConnectorNames.Frame]: frame,
   [ConnectorNames.Authereum]: authereum,
   [ConnectorNames.Fortmatic]: fortmatic,
-  [ConnectorNames.Magic]: magic,
+  // [ConnectorNames.Magic]: magic,
   [ConnectorNames.Portis]: portis,
   [ConnectorNames.Torus]: torus
 }
@@ -220,7 +220,7 @@ function Header() {
           gridGap: '1rem',
           gridTemplateColumns: '1fr min-content 1fr',
           maxWidth: '20rem',
-          lineHeight: '2rem',
+          lineHeight: '1rem',
           margin: 'auto'
         }}
       >
@@ -424,7 +424,7 @@ function App() {
             Kill Fortmatic Session
           </button>
         )}
-        {connector === connectorsByName[ConnectorNames.Magic] && (
+        {/* {connector === connectorsByName[ConnectorNames.Magic] && (
           <button
             style={{
               height: '3rem',
@@ -437,7 +437,7 @@ function App() {
           >
             Kill Magic Session
           </button>
-        )}
+        )} */}
         {connector === connectorsByName[ConnectorNames.Portis] && (
           <>
             {chainId !== undefined && (
